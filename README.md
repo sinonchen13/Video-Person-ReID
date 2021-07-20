@@ -9,8 +9,8 @@ conda activate fastreid
 conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
 ## next  
-###  数据集结构 
-###  GCM消融实验
+- 数据集结构 
+- GCM消融实验
 
 ##  baseline指标
 
