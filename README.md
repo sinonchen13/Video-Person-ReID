@@ -10,7 +10,9 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
 ## next  
 ###  数据集结构 
-###  baseline指标
+###  GCM消融实验
+
+##  baseline指标
 
 |      Datasets  (R1/mAP)    | baseline      |   
 |      :----------------:    | :-----------: | 
