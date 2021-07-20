@@ -1,0 +1,530 @@
+==========
+Args:Namespace(arch='coordatt_me_multiloss', dataset='mars', distance='cosine', gpu='3', height=256, resume='Mars_new_integrate0231', root='/home/zhangzhengjie/datasets', test_epochs=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 160, 170, 180, 190, 200, 210, 220, 230, 240], test_frames=4, width=128, workers=4)
+==========
+Initializing dataset mars
+=> MARS loaded
+Dataset statistics:
+  ------------------------------
+  subset   | # ids | # tracklets
+  ------------------------------
+  train    |   625 |     8298
+  query    |   626 |     1980
+  gallery  |   622 |     9330
+  ------------------------------
+  total    |  1247 |    19608
+  number of images per tracklet: 2 ~ 920, average 59.5
+  ------------------------------
+Initializing model: coordatt_me_multiloss
+MeGemPModule
+MeGemPModule
+MeGemPModule
+MeGemPModule
+MeGemPModule
+CoordAtt
+Model size: 29.40423M
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep10.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 69m 25s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:83.4% top5:94.0% top10:95.6% mAP:75.1%
+------------------
+re Results ----------
+top1:89.2% top5:95.9% top10:96.8% mAP:80.0%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep20.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 68m 54s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:82.5% top5:93.1% top10:95.4% mAP:74.7%
+------------------
+re Results ----------
+top1:89.6% top5:95.9% top10:97.2% mAP:80.1%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep30.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 1s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:82.5% top5:93.0% top10:95.8% mAP:74.3%
+------------------
+re Results ----------
+top1:89.4% top5:95.9% top10:97.1% mAP:79.8%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep40.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 71m 28s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:84.3% top5:94.6% top10:96.9% mAP:76.5%
+------------------
+re Results ----------
+top1:91.5% top5:96.9% top10:97.9% mAP:81.7%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep50.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 57s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:88.7% top5:96.9% top10:97.9% mAP:83.5%
+------------------
+re Results ----------
+top1:93.7% top5:97.8% top10:98.4% mAP:87.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep60.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 73m 54s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:88.8% top5:96.9% top10:97.8% mAP:84.0%
+------------------
+re Results ----------
+top1:93.9% top5:97.9% top10:98.6% mAP:87.7%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep70.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 71m 33s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.3% top5:97.1% top10:98.0% mAP:84.7%
+------------------
+re Results ----------
+top1:94.0% top5:98.1% top10:98.5% mAP:88.1%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep80.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 10s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.4% top5:97.0% top10:98.1% mAP:84.5%
+------------------
+re Results ----------
+top1:94.1% top5:97.8% top10:98.5% mAP:87.9%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep90.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 17s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.7% top5:97.0% top10:98.0% mAP:85.1%
+------------------
+re Results ----------
+top1:94.0% top5:98.0% top10:98.6% mAP:88.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep100.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 0s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.1% top5:97.2% top10:98.1% mAP:85.4%
+------------------
+re Results ----------
+top1:94.5% top5:98.0% top10:98.6% mAP:88.5%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep110.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 71m 9s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.9% top5:97.0% top10:98.1% mAP:85.2%
+------------------
+re Results ----------
+top1:94.2% top5:98.1% top10:98.6% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep120.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 71m 33s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.2% top5:97.1% top10:98.0% mAP:85.3%
+------------------
+re Results ----------
+top1:94.4% top5:97.8% top10:98.6% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep130.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 70m 58s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.9% top5:97.0% top10:98.0% mAP:85.2%
+------------------
+re Results ----------
+top1:94.2% top5:97.7% top10:98.6% mAP:88.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep140.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 68m 39s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.0% top5:97.1% top10:98.1% mAP:85.2%
+------------------
+re Results ----------
+top1:94.2% top5:97.9% top10:98.6% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep160.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 64m 42s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.2% top5:97.1% top10:98.1% mAP:85.2%
+------------------
+re Results ----------
+top1:94.4% top5:97.9% top10:98.6% mAP:88.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep170.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 65m 49s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.1% top5:97.1% top10:98.0% mAP:85.1%
+------------------
+re Results ----------
+top1:94.3% top5:97.9% top10:98.4% mAP:88.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep180.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 84m 28s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.9% top5:97.0% top10:98.1% mAP:85.3%
+------------------
+re Results ----------
+top1:94.2% top5:97.9% top10:98.6% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep190.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 62m 55s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.1% top5:97.0% top10:97.9% mAP:85.3%
+------------------
+re Results ----------
+top1:94.4% top5:97.8% top10:98.5% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep200.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 63m 6s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.2% top5:97.1% top10:98.1% mAP:85.3%
+------------------
+re Results ----------
+top1:94.4% top5:97.8% top10:98.6% mAP:88.4%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep210.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 63m 1s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:89.9% top5:96.9% top10:98.1% mAP:85.2%
+------------------
+re Results ----------
+top1:94.4% top5:98.0% top10:98.6% mAP:88.5%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep220.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 62m 48s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.2% top5:97.1% top10:98.0% mAP:85.4%
+------------------
+re Results ----------
+top1:94.4% top5:98.0% top10:98.6% mAP:88.5%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep230.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 62m 56s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.1% top5:97.0% top10:97.9% mAP:85.1%
+------------------
+re Results ----------
+top1:94.3% top5:97.7% top10:98.4% mAP:88.3%
+Loading checkpoint from 'Mars_new_integrate0231/checkpoint_ep240.pth.tar'
+Evaluate
+1000/1980
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+1000/9330
+2000/9330
+3000/9330
+4000/9330
+5000/9330
+6000/9330
+7000/9330
+8000/9330
+9000/9330
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 63m 0s
+Computing distance matrix
+Computing CMC and mAP
+ori Results ----------
+top1:90.1% top5:97.0% top10:98.0% mAP:85.2%
+------------------
+re Results ----------
+top1:94.3% top5:98.0% top10:98.5% mAP:88.3%

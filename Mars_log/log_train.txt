@@ -1,0 +1,508 @@
+==========
+Args:Namespace(arch='coordatt_me_multiloss', dataset='mars', distance='cosine', eval_step=10, gamma=0.1, gpu='0', height=256, lr=0.0003, margin=0.3, max_epoch=240, num_instances=4, resume='', root='/home/zhangzhengjie/datasets', sample_stride=8, save_dir='./Mars_new_integrate', seed=1, seq_len=4, start_epoch=0, start_eval=0, stepsize=[40, 80, 120, 160, 200], test_batch=32, train_batch=32, use_cpu=False, weight_decay=0.0005, width=128, workers=4)
+==========
+Currently using GPU 0
+Initializing dataset mars
+=> MARS loaded
+Dataset statistics:
+  ------------------------------
+  subset   | # ids | # tracklets
+  ------------------------------
+  train    |   625 |     8298
+  query    |   626 |     1980
+  gallery  |   622 |     9330
+  ------------------------------
+  total    |  1247 |    19608
+  number of images per tracklet: 2 ~ 920, average 59.5
+  ------------------------------
+Initializing model: coordatt_me_multiloss
+MeGemPModule
+MeGemPModule
+MeGemPModule
+MeGemPModule
+MeGemPModule
+CoordAtt
+Model size: 29.40423M
+==> Start training
+Epoch1 Time:226.0s Data:1.8s Loss:21.2569 Xent:20.3506 Htri:0.9064 Acc:17.54% 
+Epoch2 Time:230.9s Data:1.8s Loss:12.2326 Xent:11.7661 Htri:0.4665 Acc:44.88% 
+Epoch3 Time:228.9s Data:1.7s Loss:6.9351 Xent:6.5961 Htri:0.3390 Acc:67.71% 
+Epoch4 Time:228.4s Data:1.8s Loss:4.0846 Xent:3.7982 Htri:0.2864 Acc:81.66% 
+Epoch5 Time:226.3s Data:1.5s Loss:2.6472 Xent:2.4155 Htri:0.2316 Acc:88.92% 
+Epoch6 Time:226.7s Data:1.8s Loss:1.8680 Xent:1.6412 Htri:0.2268 Acc:93.02% 
+Epoch7 Time:230.7s Data:1.7s Loss:1.3266 Xent:1.1376 Htri:0.1890 Acc:95.53% 
+Epoch8 Time:235.4s Data:1.7s Loss:1.2227 Xent:1.0336 Htri:0.1891 Acc:96.24% 
+Epoch9 Time:232.5s Data:1.9s Loss:1.0667 Xent:0.8723 Htri:0.1943 Acc:96.81% 
+Epoch10 Time:228.7s Data:1.6s Loss:0.9045 Xent:0.7258 Htri:0.1788 Acc:97.23% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 21s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:81.5% top5:92.2% top10:94.7% mAP:71.5%
+------------------
+Epoch11 Time:223.3s Data:1.7s Loss:0.8049 Xent:0.6408 Htri:0.1640 Acc:97.71% 
+Epoch12 Time:220.7s Data:1.6s Loss:0.8166 Xent:0.6419 Htri:0.1748 Acc:97.70% 
+Epoch13 Time:222.3s Data:1.6s Loss:0.7097 Xent:0.5361 Htri:0.1736 Acc:98.18% 
+Epoch14 Time:221.5s Data:1.6s Loss:0.5790 Xent:0.4436 Htri:0.1354 Acc:98.42% 
+Epoch15 Time:220.4s Data:1.6s Loss:0.6385 Xent:0.4843 Htri:0.1542 Acc:98.28% 
+Epoch16 Time:220.9s Data:1.8s Loss:0.7349 Xent:0.5620 Htri:0.1729 Acc:97.93% 
+Epoch17 Time:223.6s Data:1.9s Loss:0.7663 Xent:0.5788 Htri:0.1876 Acc:97.66% 
+Epoch18 Time:219.2s Data:1.7s Loss:0.5918 Xent:0.4381 Htri:0.1537 Acc:98.27% 
+Epoch19 Time:221.4s Data:1.8s Loss:0.5432 Xent:0.3931 Htri:0.1502 Acc:98.63% 
+Epoch20 Time:222.2s Data:1.6s Loss:0.5270 Xent:0.3865 Htri:0.1405 Acc:98.70% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 39s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:80.2% top5:91.6% top10:94.1% mAP:71.4%
+------------------
+Epoch21 Time:221.3s Data:1.9s Loss:0.7869 Xent:0.6021 Htri:0.1848 Acc:97.51% 
+Epoch22 Time:222.1s Data:1.7s Loss:0.6690 Xent:0.4984 Htri:0.1706 Acc:97.98% 
+Epoch23 Time:222.2s Data:1.7s Loss:0.5572 Xent:0.4046 Htri:0.1526 Acc:98.42% 
+Epoch24 Time:221.4s Data:1.6s Loss:0.5358 Xent:0.3847 Htri:0.1511 Acc:98.58% 
+Epoch25 Time:222.2s Data:1.8s Loss:0.4676 Xent:0.3237 Htri:0.1439 Acc:98.68% 
+Epoch26 Time:220.4s Data:1.7s Loss:0.5059 Xent:0.3661 Htri:0.1398 Acc:98.85% 
+Epoch27 Time:221.9s Data:1.7s Loss:0.3760 Xent:0.2490 Htri:0.1269 Acc:99.00% 
+Epoch28 Time:220.9s Data:1.7s Loss:0.4290 Xent:0.3061 Htri:0.1229 Acc:98.91% 
+Epoch29 Time:220.4s Data:1.7s Loss:0.4262 Xent:0.2990 Htri:0.1273 Acc:98.93% 
+Epoch30 Time:223.2s Data:1.6s Loss:0.5767 Xent:0.4236 Htri:0.1531 Acc:98.35% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 27s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:79.6% top5:91.7% top10:94.1% mAP:70.7%
+------------------
+Epoch31 Time:219.0s Data:1.6s Loss:0.4972 Xent:0.3501 Htri:0.1472 Acc:98.60% 
+Epoch32 Time:221.8s Data:1.7s Loss:0.5347 Xent:0.3987 Htri:0.1360 Acc:98.27% 
+Epoch33 Time:220.5s Data:1.6s Loss:0.5636 Xent:0.4091 Htri:0.1546 Acc:98.50% 
+Epoch34 Time:221.4s Data:1.6s Loss:0.4018 Xent:0.2684 Htri:0.1334 Acc:99.03% 
+Epoch35 Time:221.3s Data:1.6s Loss:0.3361 Xent:0.2263 Htri:0.1098 Acc:99.28% 
+Epoch36 Time:222.1s Data:1.6s Loss:0.3251 Xent:0.2230 Htri:0.1021 Acc:99.31% 
+Epoch37 Time:222.3s Data:1.7s Loss:0.3618 Xent:0.2523 Htri:0.1095 Acc:99.12% 
+Epoch38 Time:215.9s Data:1.6s Loss:0.4177 Xent:0.3016 Htri:0.1160 Acc:99.16% 
+Epoch39 Time:222.7s Data:1.6s Loss:0.4931 Xent:0.3623 Htri:0.1309 Acc:98.74% 
+Epoch40 Time:220.4s Data:1.7s Loss:0.5126 Xent:0.3706 Htri:0.1420 Acc:98.58% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 26s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:81.4% top5:93.0% top10:95.3% mAP:73.2%
+------------------
+Epoch41 Time:218.9s Data:1.7s Loss:0.3002 Xent:0.1983 Htri:0.1019 Acc:99.39% 
+Epoch42 Time:222.0s Data:1.6s Loss:0.2127 Xent:0.1265 Htri:0.0862 Acc:99.73% 
+Epoch43 Time:221.7s Data:1.7s Loss:0.1588 Xent:0.0907 Htri:0.0682 Acc:99.87% 
+Epoch44 Time:221.5s Data:1.7s Loss:0.1442 Xent:0.0790 Htri:0.0652 Acc:99.92% 
+Epoch45 Time:220.9s Data:1.7s Loss:0.1406 Xent:0.0797 Htri:0.0609 Acc:99.84% 
+Epoch46 Time:222.0s Data:1.6s Loss:0.1079 Xent:0.0553 Htri:0.0527 Acc:99.95% 
+Epoch47 Time:221.1s Data:1.6s Loss:0.1069 Xent:0.0546 Htri:0.0523 Acc:99.91% 
+Epoch48 Time:222.7s Data:1.7s Loss:0.1060 Xent:0.0573 Htri:0.0487 Acc:99.91% 
+Epoch49 Time:220.6s Data:1.6s Loss:0.0958 Xent:0.0491 Htri:0.0467 Acc:99.99% 
+Epoch50 Time:221.3s Data:1.6s Loss:0.0989 Xent:0.0565 Htri:0.0423 Acc:99.97% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 30s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:85.8% top5:95.4% top10:97.3% mAP:80.7%
+------------------
+Epoch51 Time:216.8s Data:1.8s Loss:0.0936 Xent:0.0509 Htri:0.0427 Acc:99.92% 
+Epoch52 Time:221.8s Data:1.6s Loss:0.0921 Xent:0.0466 Htri:0.0455 Acc:99.99% 
+Epoch53 Time:220.7s Data:1.7s Loss:0.0763 Xent:0.0404 Htri:0.0360 Acc:100.00% 
+Epoch54 Time:221.0s Data:1.7s Loss:0.0810 Xent:0.0435 Htri:0.0376 Acc:99.99% 
+Epoch55 Time:220.5s Data:1.6s Loss:0.0771 Xent:0.0428 Htri:0.0343 Acc:99.97% 
+Epoch56 Time:220.9s Data:1.7s Loss:0.0823 Xent:0.0501 Htri:0.0322 Acc:99.95% 
+Epoch57 Time:219.2s Data:1.7s Loss:0.0942 Xent:0.0547 Htri:0.0396 Acc:99.93% 
+Epoch58 Time:220.5s Data:1.7s Loss:0.0953 Xent:0.0580 Htri:0.0373 Acc:99.96% 
+Epoch59 Time:220.3s Data:1.6s Loss:0.0911 Xent:0.0570 Htri:0.0342 Acc:99.92% 
+Epoch60 Time:220.1s Data:1.7s Loss:0.1027 Xent:0.0703 Htri:0.0323 Acc:99.92% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 29s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:86.3% top5:95.6% top10:97.2% mAP:81.4%
+------------------
+Epoch61 Time:216.1s Data:1.7s Loss:0.0882 Xent:0.0571 Htri:0.0311 Acc:99.99% 
+Epoch62 Time:219.2s Data:1.7s Loss:0.0917 Xent:0.0646 Htri:0.0271 Acc:99.96% 
+Epoch63 Time:220.8s Data:1.6s Loss:0.0884 Xent:0.0592 Htri:0.0292 Acc:99.99% 
+Epoch64 Time:220.3s Data:1.8s Loss:0.0886 Xent:0.0604 Htri:0.0282 Acc:99.95% 
+Epoch65 Time:220.2s Data:1.6s Loss:0.0892 Xent:0.0634 Htri:0.0258 Acc:99.95% 
+Epoch66 Time:221.1s Data:1.6s Loss:0.0859 Xent:0.0612 Htri:0.0247 Acc:99.95% 
+Epoch67 Time:219.7s Data:1.6s Loss:0.0871 Xent:0.0626 Htri:0.0245 Acc:99.93% 
+Epoch68 Time:220.7s Data:1.8s Loss:0.0925 Xent:0.0649 Htri:0.0276 Acc:99.97% 
+Epoch69 Time:220.2s Data:1.6s Loss:0.0837 Xent:0.0588 Htri:0.0249 Acc:99.93% 
+Epoch70 Time:220.2s Data:1.6s Loss:0.0832 Xent:0.0599 Htri:0.0233 Acc:99.96% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 34s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.1% top5:96.0% top10:97.4% mAP:82.1%
+------------------
+Epoch71 Time:220.0s Data:1.7s Loss:0.0736 Xent:0.0566 Htri:0.0169 Acc:99.97% 
+Epoch72 Time:221.9s Data:1.7s Loss:0.0795 Xent:0.0580 Htri:0.0215 Acc:99.99% 
+Epoch73 Time:220.3s Data:1.7s Loss:0.0916 Xent:0.0704 Htri:0.0212 Acc:99.93% 
+Epoch74 Time:220.9s Data:1.8s Loss:0.0785 Xent:0.0597 Htri:0.0188 Acc:99.99% 
+Epoch75 Time:221.0s Data:1.6s Loss:0.0847 Xent:0.0647 Htri:0.0200 Acc:99.93% 
+Epoch76 Time:220.4s Data:1.6s Loss:0.0803 Xent:0.0611 Htri:0.0192 Acc:99.97% 
+Epoch77 Time:220.7s Data:1.6s Loss:0.0828 Xent:0.0642 Htri:0.0185 Acc:99.93% 
+Epoch78 Time:220.2s Data:1.7s Loss:0.0801 Xent:0.0598 Htri:0.0203 Acc:99.99% 
+Epoch79 Time:221.0s Data:1.7s Loss:0.0861 Xent:0.0671 Htri:0.0190 Acc:99.97% 
+Epoch80 Time:220.2s Data:1.6s Loss:0.0797 Xent:0.0625 Htri:0.0172 Acc:99.92% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 35s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:86.6% top5:95.9% top10:97.4% mAP:81.9%
+------------------
+Epoch81 Time:219.4s Data:1.8s Loss:0.0838 Xent:0.0672 Htri:0.0165 Acc:99.92% 
+Epoch82 Time:220.5s Data:1.6s Loss:0.0733 Xent:0.0555 Htri:0.0178 Acc:100.00% 
+Epoch83 Time:221.3s Data:1.6s Loss:0.0654 Xent:0.0515 Htri:0.0139 Acc:100.00% 
+Epoch84 Time:219.1s Data:1.7s Loss:0.0718 Xent:0.0571 Htri:0.0147 Acc:99.99% 
+Epoch85 Time:221.5s Data:1.6s Loss:0.0729 Xent:0.0582 Htri:0.0146 Acc:99.96% 
+Epoch86 Time:222.1s Data:1.8s Loss:0.0699 Xent:0.0555 Htri:0.0144 Acc:99.97% 
+Epoch87 Time:221.3s Data:1.7s Loss:0.0710 Xent:0.0566 Htri:0.0144 Acc:99.99% 
+Epoch88 Time:220.6s Data:1.7s Loss:0.0614 Xent:0.0486 Htri:0.0128 Acc:99.99% 
+Epoch89 Time:220.7s Data:1.7s Loss:0.0633 Xent:0.0507 Htri:0.0126 Acc:99.97% 
+Epoch90 Time:217.5s Data:1.7s Loss:0.0704 Xent:0.0552 Htri:0.0152 Acc:99.97% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 37s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.2% top5:96.1% top10:97.6% mAP:82.4%
+------------------
+Epoch91 Time:220.8s Data:1.7s Loss:0.0688 Xent:0.0548 Htri:0.0140 Acc:99.95% 
+Epoch92 Time:218.9s Data:1.6s Loss:0.0666 Xent:0.0516 Htri:0.0150 Acc:99.97% 
+Epoch93 Time:221.6s Data:1.6s Loss:0.0714 Xent:0.0554 Htri:0.0160 Acc:100.00% 
+Epoch94 Time:221.6s Data:1.6s Loss:0.0692 Xent:0.0539 Htri:0.0152 Acc:99.97% 
+Epoch95 Time:219.4s Data:1.7s Loss:0.0623 Xent:0.0501 Htri:0.0122 Acc:99.99% 
+Epoch96 Time:221.3s Data:1.6s Loss:0.0634 Xent:0.0514 Htri:0.0120 Acc:99.97% 
+Epoch97 Time:220.5s Data:1.6s Loss:0.0747 Xent:0.0589 Htri:0.0157 Acc:100.00% 
+Epoch98 Time:221.4s Data:1.7s Loss:0.0698 Xent:0.0543 Htri:0.0155 Acc:99.99% 
+Epoch99 Time:221.0s Data:1.6s Loss:0.0725 Xent:0.0551 Htri:0.0173 Acc:99.97% 
+Epoch100 Time:218.2s Data:1.8s Loss:0.0741 Xent:0.0590 Htri:0.0150 Acc:99.97% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 43s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.6% top5:96.5% top10:97.6% mAP:82.7%
+------------------
+Epoch101 Time:219.4s Data:1.7s Loss:0.0645 Xent:0.0498 Htri:0.0146 Acc:99.99% 
+Epoch102 Time:220.2s Data:1.8s Loss:0.0626 Xent:0.0506 Htri:0.0121 Acc:99.96% 
+Epoch103 Time:220.6s Data:1.6s Loss:0.0680 Xent:0.0534 Htri:0.0146 Acc:99.97% 
+Epoch104 Time:220.3s Data:1.7s Loss:0.0659 Xent:0.0519 Htri:0.0140 Acc:99.99% 
+Epoch105 Time:219.3s Data:1.7s Loss:0.0693 Xent:0.0552 Htri:0.0141 Acc:99.97% 
+Epoch106 Time:221.0s Data:1.7s Loss:0.0673 Xent:0.0549 Htri:0.0124 Acc:99.97% 
+Epoch107 Time:220.8s Data:1.6s Loss:0.0717 Xent:0.0578 Htri:0.0139 Acc:99.96% 
+Epoch108 Time:221.6s Data:1.7s Loss:0.0666 Xent:0.0540 Htri:0.0126 Acc:99.97% 
+Epoch109 Time:221.4s Data:1.7s Loss:0.0638 Xent:0.0512 Htri:0.0126 Acc:99.99% 
+Epoch110 Time:221.4s Data:1.8s Loss:0.0701 Xent:0.0571 Htri:0.0130 Acc:99.96% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 47s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.7% top5:96.1% top10:97.4% mAP:82.6%
+------------------
+Epoch111 Time:219.6s Data:1.7s Loss:0.0619 Xent:0.0502 Htri:0.0117 Acc:99.97% 
+Epoch112 Time:220.7s Data:1.7s Loss:0.0683 Xent:0.0552 Htri:0.0130 Acc:99.99% 
+Epoch113 Time:221.8s Data:1.6s Loss:0.0694 Xent:0.0548 Htri:0.0146 Acc:99.97% 
+Epoch114 Time:224.1s Data:1.7s Loss:0.0695 Xent:0.0535 Htri:0.0160 Acc:99.99% 
+Epoch115 Time:221.8s Data:1.6s Loss:0.0656 Xent:0.0539 Htri:0.0116 Acc:99.97% 
+Epoch116 Time:221.4s Data:1.7s Loss:0.0658 Xent:0.0536 Htri:0.0122 Acc:99.97% 
+Epoch117 Time:221.6s Data:1.6s Loss:0.0661 Xent:0.0539 Htri:0.0122 Acc:99.97% 
+Epoch118 Time:221.4s Data:1.6s Loss:0.0655 Xent:0.0529 Htri:0.0126 Acc:100.00% 
+Epoch119 Time:221.1s Data:1.7s Loss:0.0687 Xent:0.0547 Htri:0.0140 Acc:100.00% 
+Epoch120 Time:222.0s Data:1.7s Loss:0.0664 Xent:0.0546 Htri:0.0117 Acc:99.97% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 46s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.6% top5:96.2% top10:97.6% mAP:82.7%
+------------------
+Epoch121 Time:219.1s Data:1.6s Loss:0.0674 Xent:0.0534 Htri:0.0140 Acc:99.99% 
+Epoch122 Time:221.2s Data:1.6s Loss:0.0621 Xent:0.0507 Htri:0.0114 Acc:99.99% 
+Epoch123 Time:221.8s Data:1.6s Loss:0.0661 Xent:0.0537 Htri:0.0125 Acc:100.00% 
+Epoch124 Time:220.7s Data:1.6s Loss:0.0694 Xent:0.0562 Htri:0.0133 Acc:99.97% 
+Epoch125 Time:221.4s Data:1.6s Loss:0.0669 Xent:0.0546 Htri:0.0123 Acc:99.97% 
+Epoch126 Time:220.8s Data:1.6s Loss:0.0636 Xent:0.0508 Htri:0.0127 Acc:99.99% 
+Epoch127 Time:222.1s Data:1.6s Loss:0.0717 Xent:0.0588 Htri:0.0129 Acc:99.97% 
+Epoch128 Time:221.8s Data:1.6s Loss:0.0589 Xent:0.0484 Htri:0.0105 Acc:99.97% 
+Epoch129 Time:220.4s Data:1.6s Loss:0.0574 Xent:0.0471 Htri:0.0103 Acc:99.99% 
+Epoch130 Time:220.9s Data:1.6s Loss:0.0605 Xent:0.0488 Htri:0.0117 Acc:100.00% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 39s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.5% top5:96.2% top10:97.7% mAP:82.6%
+------------------
+Epoch131 Time:220.3s Data:1.6s Loss:0.0638 Xent:0.0507 Htri:0.0131 Acc:99.97% 
+Epoch132 Time:221.3s Data:1.9s Loss:0.0693 Xent:0.0553 Htri:0.0139 Acc:99.99% 
+Epoch133 Time:216.1s Data:1.7s Loss:0.0612 Xent:0.0499 Htri:0.0113 Acc:99.99% 
+Epoch134 Time:220.5s Data:1.6s Loss:0.0708 Xent:0.0583 Htri:0.0125 Acc:99.95% 
+Epoch135 Time:222.1s Data:1.7s Loss:0.0696 Xent:0.0574 Htri:0.0123 Acc:99.96% 
+Epoch136 Time:221.7s Data:1.9s Loss:0.0612 Xent:0.0503 Htri:0.0108 Acc:100.00% 
+Epoch137 Time:221.5s Data:1.7s Loss:0.0665 Xent:0.0540 Htri:0.0125 Acc:99.99% 
+Epoch138 Time:221.1s Data:1.6s Loss:0.0679 Xent:0.0548 Htri:0.0131 Acc:99.99% 
+Epoch139 Time:219.9s Data:1.6s Loss:0.0692 Xent:0.0548 Htri:0.0144 Acc:99.99% 
+Epoch140 Time:221.5s Data:1.9s Loss:0.0671 Xent:0.0544 Htri:0.0128 Acc:99.96% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 38s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.2% top5:96.1% top10:97.5% mAP:82.6%
+------------------
+Epoch141 Time:220.0s Data:1.6s Loss:0.0695 Xent:0.0574 Htri:0.0121 Acc:99.97% 
+Epoch142 Time:219.3s Data:1.6s Loss:0.0660 Xent:0.0542 Htri:0.0119 Acc:99.96% 
+Epoch143 Time:221.1s Data:1.6s Loss:0.0622 Xent:0.0495 Htri:0.0127 Acc:99.97% 
+Epoch144 Time:221.4s Data:1.6s Loss:0.0614 Xent:0.0511 Htri:0.0102 Acc:99.99% 
+Epoch145 Time:222.3s Data:1.7s Loss:0.0652 Xent:0.0523 Htri:0.0129 Acc:100.00% 
+Epoch146 Time:222.3s Data:1.6s Loss:0.0667 Xent:0.0546 Htri:0.0121 Acc:99.99% 
+Epoch147 Time:221.5s Data:1.6s Loss:0.0691 Xent:0.0556 Htri:0.0135 Acc:99.96% 
+Epoch148 Time:222.4s Data:1.8s Loss:0.0661 Xent:0.0544 Htri:0.0118 Acc:99.99% 
+Epoch149 Time:219.6s Data:1.7s Loss:0.0680 Xent:0.0538 Htri:0.0142 Acc:99.99% 
+Epoch150 Time:219.3s Data:1.7s Loss:0.0574 Xent:0.0477 Htri:0.0097 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 33s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.9% top5:96.2% top10:97.5% mAP:82.8%
+------------------
+Epoch151 Time:220.1s Data:1.7s Loss:0.0636 Xent:0.0520 Htri:0.0116 Acc:100.00% 
+Epoch152 Time:221.9s Data:1.6s Loss:0.0592 Xent:0.0483 Htri:0.0110 Acc:100.00% 
+Epoch153 Time:221.7s Data:1.6s Loss:0.0645 Xent:0.0545 Htri:0.0100 Acc:99.97% 
+Epoch154 Time:220.9s Data:1.6s Loss:0.0640 Xent:0.0514 Htri:0.0126 Acc:99.97% 
+Epoch155 Time:222.2s Data:1.7s Loss:0.0650 Xent:0.0535 Htri:0.0115 Acc:99.99% 
+Epoch156 Time:221.4s Data:1.6s Loss:0.0630 Xent:0.0512 Htri:0.0118 Acc:99.99% 
+Epoch157 Time:222.2s Data:1.6s Loss:0.0634 Xent:0.0523 Htri:0.0111 Acc:99.99% 
+Epoch158 Time:220.2s Data:1.7s Loss:0.0661 Xent:0.0528 Htri:0.0133 Acc:99.95% 
+Epoch159 Time:221.4s Data:1.6s Loss:0.0654 Xent:0.0537 Htri:0.0116 Acc:99.97% 
+Epoch160 Time:222.3s Data:1.6s Loss:0.0602 Xent:0.0508 Htri:0.0094 Acc:99.96% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 34s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.6% top5:96.1% top10:97.7% mAP:82.6%
+------------------
+Epoch161 Time:220.3s Data:1.6s Loss:0.0656 Xent:0.0524 Htri:0.0132 Acc:100.00% 
+Epoch162 Time:221.7s Data:1.7s Loss:0.0630 Xent:0.0515 Htri:0.0115 Acc:99.99% 
+Epoch163 Time:222.0s Data:1.7s Loss:0.0589 Xent:0.0490 Htri:0.0099 Acc:99.99% 
+Epoch164 Time:222.5s Data:1.6s Loss:0.0677 Xent:0.0557 Htri:0.0119 Acc:100.00% 
+Epoch165 Time:222.4s Data:1.8s Loss:0.0648 Xent:0.0548 Htri:0.0100 Acc:99.97% 
+Epoch166 Time:221.9s Data:1.7s Loss:0.0647 Xent:0.0529 Htri:0.0118 Acc:99.99% 
+Epoch167 Time:223.8s Data:1.7s Loss:0.0639 Xent:0.0520 Htri:0.0119 Acc:99.99% 
+Epoch168 Time:222.1s Data:1.7s Loss:0.0648 Xent:0.0512 Htri:0.0136 Acc:99.99% 
+Epoch169 Time:221.7s Data:1.7s Loss:0.0634 Xent:0.0513 Htri:0.0121 Acc:99.96% 
+Epoch170 Time:220.2s Data:1.6s Loss:0.0598 Xent:0.0499 Htri:0.0100 Acc:100.00% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 25s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.5% top5:96.2% top10:97.4% mAP:82.7%
+------------------
+Epoch171 Time:219.5s Data:1.7s Loss:0.0714 Xent:0.0567 Htri:0.0147 Acc:99.97% 
+Epoch172 Time:222.2s Data:1.8s Loss:0.0682 Xent:0.0543 Htri:0.0140 Acc:99.97% 
+Epoch173 Time:220.5s Data:1.6s Loss:0.0619 Xent:0.0511 Htri:0.0108 Acc:99.99% 
+Epoch174 Time:221.3s Data:1.6s Loss:0.0651 Xent:0.0544 Htri:0.0107 Acc:99.97% 
+Epoch175 Time:220.4s Data:1.7s Loss:0.0674 Xent:0.0541 Htri:0.0133 Acc:100.00% 
+Epoch176 Time:215.8s Data:1.7s Loss:0.0648 Xent:0.0516 Htri:0.0131 Acc:100.00% 
+Epoch177 Time:220.0s Data:1.7s Loss:0.0575 Xent:0.0458 Htri:0.0117 Acc:100.00% 
+Epoch178 Time:220.8s Data:1.7s Loss:0.0664 Xent:0.0554 Htri:0.0110 Acc:99.96% 
+Epoch179 Time:222.1s Data:1.6s Loss:0.0713 Xent:0.0573 Htri:0.0140 Acc:100.00% 
+Epoch180 Time:221.6s Data:1.7s Loss:0.0622 Xent:0.0505 Htri:0.0117 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 23s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.5% top5:96.3% top10:97.6% mAP:82.7%
+------------------
+Epoch181 Time:220.5s Data:1.6s Loss:0.0642 Xent:0.0525 Htri:0.0116 Acc:99.97% 
+Epoch182 Time:221.6s Data:1.6s Loss:0.0608 Xent:0.0504 Htri:0.0103 Acc:99.99% 
+Epoch183 Time:217.0s Data:1.8s Loss:0.0676 Xent:0.0553 Htri:0.0123 Acc:99.97% 
+Epoch184 Time:221.4s Data:1.9s Loss:0.0660 Xent:0.0555 Htri:0.0105 Acc:99.97% 
+Epoch185 Time:216.7s Data:1.6s Loss:0.0692 Xent:0.0583 Htri:0.0109 Acc:99.99% 
+Epoch186 Time:221.7s Data:1.7s Loss:0.0655 Xent:0.0513 Htri:0.0142 Acc:99.97% 
+Epoch187 Time:222.8s Data:1.6s Loss:0.0632 Xent:0.0516 Htri:0.0117 Acc:100.00% 
+Epoch188 Time:223.1s Data:1.8s Loss:0.0674 Xent:0.0553 Htri:0.0122 Acc:99.97% 
+Epoch189 Time:222.8s Data:1.6s Loss:0.0695 Xent:0.0559 Htri:0.0136 Acc:99.95% 
+Epoch190 Time:220.9s Data:1.7s Loss:0.0678 Xent:0.0545 Htri:0.0132 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 24s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.4% top5:96.1% top10:97.5% mAP:82.7%
+------------------
+Epoch191 Time:220.8s Data:1.6s Loss:0.0722 Xent:0.0576 Htri:0.0147 Acc:99.97% 
+Epoch192 Time:223.1s Data:1.6s Loss:0.0632 Xent:0.0526 Htri:0.0106 Acc:99.97% 
+Epoch193 Time:222.6s Data:1.6s Loss:0.0695 Xent:0.0587 Htri:0.0108 Acc:99.97% 
+Epoch194 Time:221.7s Data:1.7s Loss:0.0624 Xent:0.0498 Htri:0.0126 Acc:99.99% 
+Epoch195 Time:221.0s Data:1.8s Loss:0.0602 Xent:0.0495 Htri:0.0108 Acc:99.99% 
+Epoch196 Time:219.9s Data:1.8s Loss:0.0635 Xent:0.0519 Htri:0.0115 Acc:99.99% 
+Epoch197 Time:221.1s Data:1.6s Loss:0.0620 Xent:0.0525 Htri:0.0095 Acc:99.99% 
+Epoch198 Time:221.3s Data:1.7s Loss:0.0596 Xent:0.0483 Htri:0.0113 Acc:100.00% 
+Epoch199 Time:218.6s Data:1.6s Loss:0.0626 Xent:0.0521 Htri:0.0105 Acc:100.00% 
+Epoch200 Time:221.4s Data:1.7s Loss:0.0687 Xent:0.0562 Htri:0.0124 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 21s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.8% top5:96.3% top10:97.5% mAP:82.7%
+------------------
+Epoch201 Time:220.3s Data:1.6s Loss:0.0634 Xent:0.0520 Htri:0.0113 Acc:100.00% 
+Epoch202 Time:220.2s Data:1.7s Loss:0.0609 Xent:0.0501 Htri:0.0108 Acc:99.99% 
+Epoch203 Time:221.5s Data:1.6s Loss:0.0629 Xent:0.0496 Htri:0.0133 Acc:100.00% 
+Epoch204 Time:221.0s Data:1.6s Loss:0.0605 Xent:0.0498 Htri:0.0107 Acc:100.00% 
+Epoch205 Time:219.9s Data:1.6s Loss:0.0662 Xent:0.0544 Htri:0.0117 Acc:100.00% 
+Epoch206 Time:216.2s Data:1.8s Loss:0.0689 Xent:0.0557 Htri:0.0132 Acc:99.95% 
+Epoch207 Time:221.5s Data:1.6s Loss:0.0615 Xent:0.0513 Htri:0.0102 Acc:99.99% 
+Epoch208 Time:221.0s Data:1.7s Loss:0.0640 Xent:0.0512 Htri:0.0129 Acc:100.00% 
+Epoch209 Time:220.7s Data:1.6s Loss:0.0668 Xent:0.0546 Htri:0.0122 Acc:99.99% 
+Epoch210 Time:219.4s Data:1.8s Loss:0.0632 Xent:0.0520 Htri:0.0113 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 24s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.8% top5:96.3% top10:97.6% mAP:82.7%
+------------------
+Epoch211 Time:220.3s Data:1.6s Loss:0.0673 Xent:0.0545 Htri:0.0129 Acc:100.00% 
+Epoch212 Time:220.4s Data:1.7s Loss:0.0595 Xent:0.0503 Htri:0.0092 Acc:99.99% 
+Epoch213 Time:220.6s Data:1.6s Loss:0.0665 Xent:0.0550 Htri:0.0115 Acc:99.99% 
+Epoch214 Time:220.2s Data:1.6s Loss:0.0658 Xent:0.0532 Htri:0.0126 Acc:99.96% 
+Epoch215 Time:220.3s Data:1.6s Loss:0.0647 Xent:0.0533 Htri:0.0114 Acc:99.97% 
+Epoch216 Time:220.7s Data:1.7s Loss:0.0621 Xent:0.0491 Htri:0.0130 Acc:99.99% 
+Epoch217 Time:218.6s Data:1.8s Loss:0.0639 Xent:0.0523 Htri:0.0116 Acc:99.99% 
+Epoch218 Time:221.4s Data:1.6s Loss:0.0641 Xent:0.0524 Htri:0.0118 Acc:99.99% 
+Epoch219 Time:220.5s Data:1.6s Loss:0.0627 Xent:0.0528 Htri:0.0100 Acc:99.97% 
+Epoch220 Time:220.2s Data:1.6s Loss:0.0641 Xent:0.0527 Htri:0.0114 Acc:100.00% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 24s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.9% top5:96.3% top10:97.5% mAP:82.8%
+------------------
+Epoch221 Time:220.4s Data:1.6s Loss:0.0685 Xent:0.0564 Htri:0.0121 Acc:99.95% 
+Epoch222 Time:220.8s Data:1.7s Loss:0.0641 Xent:0.0523 Htri:0.0118 Acc:99.97% 
+Epoch223 Time:222.3s Data:1.8s Loss:0.0604 Xent:0.0490 Htri:0.0114 Acc:99.99% 
+Epoch224 Time:219.4s Data:1.6s Loss:0.0574 Xent:0.0470 Htri:0.0103 Acc:100.00% 
+Epoch225 Time:220.6s Data:1.6s Loss:0.0666 Xent:0.0555 Htri:0.0111 Acc:100.00% 
+Epoch226 Time:220.1s Data:1.7s Loss:0.0615 Xent:0.0508 Htri:0.0108 Acc:99.99% 
+Epoch227 Time:221.2s Data:1.7s Loss:0.0604 Xent:0.0510 Htri:0.0094 Acc:99.99% 
+Epoch228 Time:221.2s Data:1.6s Loss:0.0644 Xent:0.0527 Htri:0.0117 Acc:99.99% 
+Epoch229 Time:219.8s Data:1.6s Loss:0.0662 Xent:0.0538 Htri:0.0124 Acc:100.00% 
+Epoch230 Time:219.0s Data:1.8s Loss:0.0717 Xent:0.0589 Htri:0.0128 Acc:99.95% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 22s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.7% top5:96.3% top10:97.6% mAP:82.6%
+------------------
+Epoch231 Time:223.8s Data:1.7s Loss:0.0602 Xent:0.0494 Htri:0.0108 Acc:99.97% 
+Epoch232 Time:219.9s Data:1.6s Loss:0.0609 Xent:0.0518 Htri:0.0091 Acc:99.99% 
+Epoch233 Time:220.2s Data:1.6s Loss:0.0653 Xent:0.0530 Htri:0.0123 Acc:99.99% 
+Epoch234 Time:221.0s Data:1.7s Loss:0.0658 Xent:0.0532 Htri:0.0126 Acc:99.99% 
+Epoch235 Time:215.0s Data:1.6s Loss:0.0656 Xent:0.0531 Htri:0.0125 Acc:99.99% 
+Epoch236 Time:220.4s Data:1.7s Loss:0.0616 Xent:0.0508 Htri:0.0107 Acc:99.99% 
+Epoch237 Time:225.4s Data:1.6s Loss:0.0628 Xent:0.0513 Htri:0.0115 Acc:100.00% 
+Epoch238 Time:215.8s Data:1.8s Loss:0.0605 Xent:0.0499 Htri:0.0106 Acc:100.00% 
+Epoch239 Time:222.0s Data:1.7s Loss:0.0634 Xent:0.0532 Htri:0.0102 Acc:100.00% 
+Epoch240 Time:222.3s Data:1.9s Loss:0.0700 Xent:0.0563 Htri:0.0137 Acc:99.99% 
+==> Test
+Extracted features for query set, obtained torch.Size([1980, 2048]) matrix
+mars
+Extracted features for gallery set, obtained torch.Size([11310, 2048]) matrix
+Extracting features complete in 2m 21s
+Computing distance matrix
+Computing CMC and mAP
+Results ----------
+top1:87.8% top5:96.3% top10:97.6% mAP:82.7%
+------------------
+==> Best Rank-1 87.9%, achieved at epoch 150
+Finished. Total elapsed time (h:m:s): 15:53:59. Training time (h:m:s): 14:44:53.
