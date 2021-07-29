@@ -66,7 +66,7 @@ def get_actmap(features, sz,seq_len):
         for j in range(seq_len):
             act = acts[i*seq_len+j].numpy()
             act = cv2.resize(act, (sz[1], sz[0]))
-            act = 255 * (act - act.min()) / (act.max() - act.min() + 1e-12)
+            act = 255 * (act - act.min()) / (act.max() - act.min() + 1e-12)  #act = 255 * (act - act.max()) / (act.max() - act.min() + 1e-12)
             act = np.uint8(np.floor(act))
             act = cv2.applyColorMap(act, cv2.COLORMAP_JET)
             tmp.append(act)
