@@ -8,35 +8,37 @@ conda create -n fastreid python=3.7
 conda activate fastreid
 conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
-## next  
-- 数据集结构 
-- GCM消融实验
-
-##  baseline指标
-
-|      Datasets  (R1/mAP)    | baseline      |   
-|      :----------------:    | :-----------: | 
-| prid (split_id=9)          |    94.4/--    | 
-| ilids (split_id=9)         |    82.7/--    | 
-|        Mars                |    88.9/83.4  |  
-|       DukeV                |    95.9/95.3  |   
-|       LSVID                |    81.5/72.1  |   
-------------------------------------------------
-## 我的模型 GCM
-**真实的数据指标，有的数据集模型效果比baseline还低**  
-**虚假的数据指标，不管什么数据集都有效  :(**  
-**反正没得发，随便跑跑**  
-- GemMe
-- CoordAtt3D
-- MultiLoss 
+## 算法 
+- 1.GCM
+ - GemMe
+ - CoordAtt3D
+ - MultiLoss 
+- 2.MRA (Multi Range Aggregation)
+ - Range Feature Gen
+ - Global Reference Module
+ - Stepwise Fusion Module
  
-|      Datasets  (R1/mAP)    | GCM           |   
-|      :----------------:    | :-----------: | 
-| prid (split_id=9)          |     92.1/--   | 
-| ilids (split_id=9)         |     86.0/--   | 
-|        Mars                |    90.2/85.4  | 
-|       DukeV                |               |  
-|       LSVID                |               | 
+##  baseline指标  
+括号中表示split_id  后续统一一下  
+
+|      Datasets  (R1/mAP)    | baseline       |   
+|      :----------------:    | :-----------:  | 
+| prid                       |    94.4/-- (9) | 
+| ilids                      |    82.7/-- (9) | 
+|        Mars                |    88.9/83.4   |  
+|       DukeV                |    95.9/95.3   |   
+|       LSVID                |    81.5/72.1   |   
+------------------------------------------------
+
+**只记录真实的数据指标**  
+
+|      Datasets  (R1/mAP)    | GCM             |    MRA         |
+|      :----------------:    | :-----------:   |  :-----------: |
+| prid                       |     92.1/--(9)  | 94.4/--(0)     |
+| ilids                      |     86.0/--(9)  | 92.0/--(0)     |
+|        Mars                |    90.2/85.4    | 91.1/85.5      |
+|       DukeV                |                 | 98.4/97.4      |
+|       LSVID                |                 | 78.9/67.9      |
  
 
 ------------------------------------------------- 
@@ -45,7 +47,7 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 
   ![gt image](pic/0912C5T0006F001_gt.jpg) 
 
-- res demo  
+- result demo  
 
   ![res image](pic/0912C5T0006F001.jpg)  
 
