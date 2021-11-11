@@ -32,7 +32,7 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 |        Mars                |    **90.2/85.4**  | 
 |       LSVID                |               | 
 |       DukeV                |               |   
-| prid (split_id=9)          |               | 
+| prid (split_id=9)          |     92.1          | 
 | ilids (split_id=9)         |               | 
 ------------------------------------------------- 
 ## 可视化Demo  
