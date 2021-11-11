@@ -32,8 +32,8 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
  
 |      Datasets  (R1/mAP)    | GCM           |   
 |      :----------------:    | :-----------: | 
-| prid (split_id=9)          |     92.1          | 
-| ilids (split_id=9)         |     86.0          | 
+| prid (split_id=9)          |     92.1/--   | 
+| ilids (split_id=9)         |     86.0/--   | 
 |        Mars                |    90.2/85.4  | 
 |       DukeV                |               |  
 |       LSVID                |               | 
