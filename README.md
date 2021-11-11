@@ -10,13 +10,13 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
 ## 算法 
 - 1.GCM
- - GemMe
- - CoordAtt3D
- - MultiLoss 
+  - GemMe
+  - CoordAtt3D
+  - MultiLoss 
 - 2.MRA (Multi Range Aggregation)
- - Range Feature Gen
- - Global Reference Module
- - Stepwise Fusion Module
+  - Range Feature Gen
+  - Global Reference Module
+  - Stepwise Fusion Module
  
 ##  baseline指标  
 括号中表示split_id  后续统一一下  
