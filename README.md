@@ -8,6 +8,8 @@ conda create -n fastreid python=3.7
 conda activate fastreid
 conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
+## TODO   
+现阶段存在两套代码，GCM一套，MRA一套，尝试合成一套，看看结果
 ## 算法 
 - 1.GCM
   - GemMe
