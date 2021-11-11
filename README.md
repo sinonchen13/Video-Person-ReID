@@ -16,7 +16,7 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 
 |      Datasets  (R1/mAP)    | baseline      |   
 |      :----------------:    | :-----------: | 
-| prid (split_id=9)          |    95.5/--    | 
+| prid (split_id=9)          |    94.4/--    | 
 | ilids (split_id=9)         |    87.3/--    | 
 |        Mars                |    88.9/83.4  |  
 |       DukeV                |    95.9/95.3  |   
