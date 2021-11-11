@@ -23,9 +23,9 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 |       LSVID                |    81.5/72.1  |   
 ------------------------------------------------
 ## 我的模型 GCM
-**真实的数据指标，有的数据集模型效果比baseline还低**
-**虚假的数据指标，不管什么数据集都有效  :(**
-**反正没得发，随便跑跑**
+**真实的数据指标，有的数据集模型效果比baseline还低** 
+**虚假的数据指标，不管什么数据集都有效  :(** 
+**反正没得发，随便跑跑** 
 - GemMe
 - CoordAtt3D
 - MultiLoss 
