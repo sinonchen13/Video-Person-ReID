@@ -1,6 +1,7 @@
-## VPReID
-video person re-identification 
 
+## VPReID
+video person re-identification   
+个人毕设记录  代码在全部完成并整理后 上传  
 ## 环境安装  
 参考 https://github.com/JDAI-CV/fast-reid  
 ```shell script
