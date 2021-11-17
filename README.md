@@ -2,6 +2,7 @@
 ## VPReID
 video person re-identification   
 个人毕设记录  代码在全部完成并整理后 上传  
+  
 ## 环境安装  
 参考 https://github.com/JDAI-CV/fast-reid  
 ```shell script
@@ -13,13 +14,14 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 
 ## 算法 
 - 1.MST
-  - GemMe
-  - STBlock
-  - MultiLoss 
+  - GemMe (gemP motion enhance)
+  - STB (spatial temporal block)
+  - RFE (random frame feature eraseing)
+ 
 - 2.MRA (Multi Range Aggregation)
-  - Range Feature Gen
-  - Global Reference Module
-  - Stepwise Fusion Module
+  - RFG (range feature generate)
+  - GRR (global range reference)
+  - SFM (stepwise fusion module) 
  
 ##  baseline指标  
 括号中表示split_id  
