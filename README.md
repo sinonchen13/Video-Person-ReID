@@ -9,11 +9,11 @@ conda activate fastreid
 conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
 ```
 ## TODO   
-现阶段存在两套代码，GCM一套，MRA一套，尝试合成一套，看看结果
+
 ## 算法 
-- 1.GCM
+- 1.MST
   - GemMe
-  - CoordAtt3D
+  - STBlock
   - MultiLoss 
 - 2.MRA (Multi Range Aggregation)
   - Range Feature Gen
@@ -21,26 +21,26 @@ conda install pytorch==1.6.0 torchvision tensorboard -c pytorch
   - Stepwise Fusion Module
  
 ##  baseline指标  
-括号中表示split_id  后续统一一下  
+括号中表示split_id  
 
 |      Datasets  (R1/mAP)    | baseline       |   
 |      :----------------:    | :-----------:  | 
-| prid                       |    94.4/-- (9) | 
-| ilids                      |    82.7/-- (9) | 
-|        Mars                |    88.9/83.4   |  
-|       DukeV                |    95.9/95.3   |   
-|       LSVID                |    81.5/72.1   |   
+| prid                       |                | 
+| ilids                      |                | 
+|        Mars                |                |  
+|       DukeV                |                |   
+|       LSVID                |                |   
 ------------------------------------------------
 
 **只记录真实的数据指标**  
 
-|      Datasets  (R1/mAP)    | GCM             |    MRA         |
-|      :----------------:    | :-----------:   |  :-----------: |
-| prid                       |     92.1/--(9)  | 94.4/--(0)     |
-| ilids                      |     86.0/--(9)  | 92.0/--(0)     |
-|        Mars                |    90.2/85.4    | 91.1/85.5      |
-|       DukeV                |                 | 98.4/97.4      |
-|       LSVID                |                 | 78.9/67.9      |
+|      Datasets  (R1/mAP)    | MST (2X1080TI)          |    MRA (2X1080TI)         |  MST-MRA (A100)      |  
+|      :----------------:    | :-----------:   |  :-----------: |   :-----------: |  
+| prid                       |     /--(0)      | 94.4/--(0)     |                 |
+| ilids                      |     95.3/--(0)  | 92.0/--(0)     |                 |  
+|        Mars                |    91.2/86.3    | 91.1/85.5      | 91.6/85.6       |
+|       DukeV                |    97.1/97.6    | 98.4/97.4      |                 | 
+|       LSVID                |                 | 78.9/67.9      |                 | 
  
 
 ------------------------------------------------- 
